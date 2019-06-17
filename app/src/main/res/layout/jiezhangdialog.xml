@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="6dp" 
+    android:paddingRight="6dp">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/edittextbackground"
+        >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/jizhang"
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+          
+            >
+    <LinearLayout 
+          android:id="@+id/JiZhangTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="33dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="70dp"
+       
+        >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+   <TextView 
+        android:id="@+id/JiZhangText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="很抱歉，由于您2019-02的账款未结，下期做账受限，请先结账!"
+        android:textSize="13sp"
+        />
+   </LinearLayout>
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="160dp"
+       android:orientation="horizontal"
+       android:gravity="center"
+       >
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="当前处于未结账状态"
+           android:textColor="#ff0000"
+           android:textSize="13sp"
+           />
+   </LinearLayout>
+    </LinearLayout>
+<LinearLayout 
+      android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="33dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="55dp"
+        android:id="@+id/JiZhangDataLayout"
+        android:visibility="gone"
+    >
+     <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+   
+     <TextView 
+        android:id="@+id/TotalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01-02"
+        android:textColor="#ff0000"
+        android:textSize="13sp"
+        />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="总账数据如下:"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="13sp"
+        />
+   </LinearLayout>
+    <ListView 
+        android:id="@+id/JiZhangDataListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></ListView>
+
+</LinearLayout>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="30dp"
+    android:layout_marginRight="60dp"
+    android:gravity="center_vertical"
+    >
+<ImageView 
+    android:layout_width="25dp"
+    android:layout_height="20dp"
+    android:src="@drawable/notify1"
+    />
+    <tool.RollTextView
+        android:id="@+id/NotifyTime"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:text="通知时间:2019-01-03"
+        android:textColor="#ff0000"
+        android:textSize="12sp"
+        android:layout_marginLeft="3dp"
+        android:singleLine="true"
+        android:marqueeRepeatLimit="marquee_forever"
+             android:ellipsize="marquee"
+        />
+</LinearLayout>
+<TextView 
+    android:id="@+id/JieZhang"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="结 账"
+    android:textColor="#ff0000"
+    android:textSize="15sp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="17dp"
+    android:layout_marginBottom="22dp"
+    android:textStyle="bold"
+    />
+<LinearLayout 
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+ android:orientation="horizontal"
+ android:gravity="center"
+    android:layout_marginBottom="6dp"
+    >
+<TextView 
+    android:id="@+id/NoJieZhang"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="暂不结账"
+    android:textColor="#000000"
+    android:textSize="13sp"
+    android:textStyle="bold"
+    />
+</LinearLayout>
+</RelativeLayout>
+</LinearLayout>
+</LinearLayout>

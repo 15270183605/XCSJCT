@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="#00a8f3"
+                android:orientation="horizontal" >
+
+                 <tool.CircleImageView
+            android:id="@+id/add"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/addadd" />
+
+                <LinearLayout
+                    android:id="@+id/YearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="3dp" >
+
+                    <TextView
+                        android:id="@+id/addYear1"
+                        android:layout_width="13dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="7dp"
+                        android:text="+"
+                        android:textColor="#ff0000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Year1"
+                        android:layout_width="32dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittextbackground"
+                        android:hint="年份"
+                        android:text="2018"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="3dp"
+                        android:text="年"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/cutYear1"
+                        android:layout_width="10dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="7dp"
+                        android:text="——"
+                        android:textColor="#ff0000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/MonthLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                     >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#000000" />
+
+                    <TextView
+                        android:id="@+id/addMonth1"
+                        android:layout_width="13dp"
+                        android:layout_height="28dp"
+                        android:layout_marginLeft="7dp"
+                        android:text="+"
+                        android:textColor="#ff0000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Month1"
+                        android:layout_width="20dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittextbackground"
+                        android:text="01"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="3dp"
+                        android:text="月"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/cutMonth1"
+                        android:layout_width="10dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="7dp"
+                        android:text="——"
+                        android:textColor="#ff0000"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/DayLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#000000" />
+
+                    <EditText
+                        android:id="@+id/DayText"
+                        android:layout_width="20dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:background="@drawable/edittextbackground"
+                        android:text="01"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="10dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="3dp"
+                        android:text="日"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/selectTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="3dp" />
+            </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#00FF7F" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:background="#e5e5e5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+                <GridView 
+                    android:id="@+id/NoteTitleGridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:numColumns="5"
+                    ></GridView>
+<!-- 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:text="早上"
+            android:textColor="#cc6666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:text="上午"
+            android:textColor="#cc6666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="34dp"
+            android:text="中午"
+            android:textColor="#cc6666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="29dp"
+            android:text="下午"
+            android:textColor="#cc6666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:gravity="center"
+            android:text="晚上"
+            android:textColor="#cc6666"
+            android:textSize="12sp" /> -->
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#ffff33" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e5e5e5"
+        android:orientation="vertical">
+      <LinearLayout 
+          android:layout_width="fill_parent"
+          android:id="@+id/ShowNoteNodata"
+          android:layout_height="300dp"
+          android:gravity="center"
+          android:visibility="gone"
+          >
+          <TextView 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="暂无日程!"
+              android:textColor="#ff0000"
+              android:textSize="16sp"
+              />
+      </LinearLayout>
+        <ScrollView
+            android:id="@+id/Scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/datelistview"
+                        android:layout_width="30dp"
+                        android:layout_height="fill_parent"
+                        android:dividerHeight="0.0dip" />
+                   
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#E5E5E5" />
+
+                <GridView
+                    android:id="@+id/ScheduleView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#E5E5E5"
+                    android:horizontalSpacing="1dp"
+                    android:numColumns="5"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="1dp" >
+                </GridView>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout 
+    android:id="@+id/BottomLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="6dp"
+    android:visibility="gone"
+    >
+    <ImageView 
+        android:id="@+id/cutWeek"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/cutweek"
+        android:visibility="gone"
+        />
+    <TextView 
+       android:layout_marginLeft="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第"
+        android:textSize="13sp"
+        />
+    <TextView 
+        android:layout_marginLeft="3dp"
+        android:id="@+id/WeekCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="15sp"
+        android:textColor="#ff0000"
+        />
+    <TextView 
+       android:layout_marginLeft="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="周"
+        android:textSize="13sp"
+        />
+    <ImageView 
+        android:id="@+id/addWeek"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/addweek"
+        />
+</LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

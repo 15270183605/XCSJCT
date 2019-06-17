@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+       android:layout_above="@+id/ll_bottom"
+        >
+    </LinearLayout>
+     <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#e5e5e5"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1">
+            <ImageView
+                 android:id="@+id/ShouYe"
+                android:layout_width="50dp"
+                android:layout_height="37dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/shouye" />
+
+            <TextView
+               android:id="@+id/ShouYeText"
+                android:textSize="10sp"
+                android:layout_centerInParent="true"
+                android:text="首页"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ShouYe"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+              android:layout_marginLeft="15dp">
+            <ImageView
+                android:id="@+id/JinRong"
+                android:layout_width="50dp"
+                android:layout_height="37dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/jinrong" 
+              />
+            <TextView
+                android:id="@+id/TextJinRong"
+                android:textSize="10sp"
+                android:layout_centerInParent="true"
+                android:text="金融"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/JinRong"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="65dp"
+            android:layout_gravity="bottom">
+
+            <ImageView
+                android:id="@+id/Add"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/poupadd" />
+            <TextView
+                android:id="@+id/TextAdd"
+               
+                android:textSize="10sp"
+                android:layout_centerInParent="true"
+                android:text="添加"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Add"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginRight="14dp">
+            <ImageView
+                android:id="@+id/Life"
+                android:layout_width="50dp"
+                android:layout_height="37dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/life" />
+            <TextView
+                 android:id="@+id/TextLife"
+              
+                android:textSize="10sp"
+                android:layout_centerInParent="true"
+                android:text="生活"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Life"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1">
+            <ImageView
+               android:id="@+id/Mine"
+                android:layout_width="50dp"
+                android:layout_height="37dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/my"
+                />
+            <TextView
+                   android:id="@+id/TextMine"
+              
+                android:textSize="10sp"
+                android:layout_centerInParent="true"
+                android:text="我的"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Mine"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+     
+  
+</RelativeLayout>

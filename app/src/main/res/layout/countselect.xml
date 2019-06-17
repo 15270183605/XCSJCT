@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#ff0000"
+        android:text="提示：在结账之前您必须保证您的所有单据 都已锁定，若存在未锁定单据请先锁定单据，请问是否需要检查所有单据状态?"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        />
+<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+      
+        >
+        <RadioGroup
+            android:id="@+id/YesOrNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="click"
+                android:textSize="13sp"
+                android:text="是" 
+               android:layout_marginLeft="40dp"
+                android:textColor="@android:color/holo_blue_bright"/>
+
+            <RadioButton
+                android:id="@+id/No"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="否" 
+                android:textSize="13sp"
+                android:onClick="click"
+                android:textColor="@android:color/holo_blue_bright"
+                android:layout_marginLeft="40dp"/>
+          </RadioGroup>
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            />
+    </LinearLayout>
+</LinearLayout>

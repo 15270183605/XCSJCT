@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/chongzhibackgroundshape"
+        >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+      
+        android:layout_marginTop="5dp"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡类型:"
+            android:textSize="13sp"
+            />
+        <RelativeLayout
+            android:id="@+id/AddBankLayout"
+            android:layout_width="120dp"
+            android:layout_height="27dp"
+            android:background="@drawable/edittextbackground"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp" 
+             android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/BankClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="建设银行"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/BankExpandDown"
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/expanddown" />
+        </RelativeLayout>
+        <ImageView 
+            android:id="@+id/BankCardImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/jianhang"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+     
+    >
+    <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银 行 卡 号 :"
+            android:textSize="13sp"
+            />
+    <EditText 
+        android:layout_width="155dp"
+        android:layout_height="match_parent"
+        android:id="@+id/InputCardNum"
+        android:textSize="15sp"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginLeft="10dp"
+        />
+</LinearLayout>
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:layout_marginTop="20dp"
+    >
+    <TextView 
+        android:id="@+id/SaveBankCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="15sp"
+        android:text="添加"
+        android:layout_toLeftOf="@+id/CancelBankCard"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        />
+     <TextView 
+        android:id="@+id/CancelBankCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:text="取消"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="38dp"
+         android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    ></LinearLayout>
+</LinearLayout>
+</LinearLayout>

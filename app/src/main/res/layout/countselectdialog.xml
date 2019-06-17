@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent" >
+<tool.EnterAnimLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:id="@+id/SelectTopLayout"
+     android:background="#ffffff"
+    >
+    <RelativeLayout
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        
+          <LinearLayout
+              android:id="@+id/SelectTiaoJianLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" 
+           
+           >
+<TextView 
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:text="筛选条件:"
+    android:layout_marginLeft="5dp"
+    />
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="从"
+    android:textSize="14sp"
+    />
+
+                      <EditText
+                     android:id="@+id/YearSelectEdit"
+                    android:layout_width="60dp"
+                    android:layout_height="22dp"
+                   android:background="@drawable/edittextbackground"
+                    android:textColor="#ff0000"
+                    android:textSize="14sp" 
+                    android:layout_marginLeft="3dp"
+                    android:inputType="number"/>
+            
+
+           
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年"
+               android:layout_marginLeft="3dp"
+                    android:textSize="14sp" 
+                    />
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到"
+                  
+                    android:textSize="14sp"
+                    android:layout_marginLeft="10dp" />
+                 
+                      <EditText
+                     android:id="@+id/YearSelectEdit1"
+                    android:layout_width="60dp"
+                    android:layout_height="22dp"
+                   android:background="@drawable/edittextbackground"
+                    android:textColor="#ff0000"
+                    android:textSize="14sp" 
+                    android:layout_marginLeft="10dp"
+                    android:inputType="number"/>
+            
+
+           
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年"
+               android:layout_marginLeft="3dp"
+                    android:textSize="14sp" />
+           
+        </LinearLayout>
+         <LinearLayout
+              android:id="@+id/SelectTiaoJianLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" 
+          android:visibility="gone"
+           >
+<TextView 
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:text="筛选条件:"
+    android:layout_marginLeft="5dp"
+    />
+ <Spinner 
+           android:id="@+id/SelectYearSpinner"
+           android:layout_width="wrap_content"
+           android:layout_height="30dp"
+           />
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="年"
+           android:textSize="14sp"
+           />
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="从"
+    android:textSize="14sp"
+    android:layout_marginLeft="2dp"
+    />
+
+                      <EditText
+                     android:id="@+id/MonthSelectEdit"
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                   android:background="@drawable/edittextbackground"
+                    android:textColor="#ff0000"
+                    android:textSize="14sp" 
+                    android:layout_marginLeft="3dp"
+                    android:inputType="number"/>
+            
+
+           
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月"
+               android:layout_marginLeft="3dp"
+                    android:textSize="14sp" 
+                    />
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="到"
+                  
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp" />
+                 
+                      <EditText
+                     android:id="@+id/MonthSelectEdit1"
+                    android:layout_width="40dp"
+                    android:layout_height="22dp"
+                   android:background="@drawable/edittextbackground"
+                    android:textColor="#ff0000"
+                    android:textSize="14sp" 
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"/>
+            
+
+           
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月"
+               android:layout_marginLeft="3dp"
+                    android:textSize="14sp" />
+           
+        </LinearLayout>
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+           android:layout_marginTop="45dp"
+            >
+            <TextView 
+                android:id="@+id/SelectSure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"
+                android:textColor="#ff0000"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                />
+             <TextView 
+                android:id="@+id/SelectCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="取消"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="65dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+</tool.EnterAnimLayout>
+</LinearLayout>

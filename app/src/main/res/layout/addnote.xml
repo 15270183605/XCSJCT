@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/noteitembackground">
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        
+        >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            android:id="@+id/NoteTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新增日程"
+            android:textColor="#ff0000"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/maketime"
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/time"
+            android:background="#ffffff"
+            android:ems="10"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/maketime"
+            android:layout_alignBottom="@+id/maketime"
+            android:layout_alignParentLeft="true"
+            android:text="时间:"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="12sp" />
+
+        <tool.CircleImageView
+            android:id="@+id/MakeTime"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@+id/time"
+            android:layout_alignRight="@+id/maketime"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/calendar" />
+
+    </RelativeLayout>
+
+<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/EarlyMorning"
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/text1"
+            android:background="#ffffff"
+            android:ems="10"
+            android:textSize="14sp" >
+
+        </EditText>
+
+        <TextView
+             android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/EarlyMorning"
+            android:layout_alignBottom="@+id/EarlyMorning"
+            android:layout_alignParentLeft="true"
+            android:text="早上:"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout 
+         android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="15dp"
+        >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/Morning"
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/text1"
+            android:background="#ffffff"
+            android:ems="10"
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Morning"
+            android:layout_alignBottom="@+id/Morning"
+            android:layout_alignParentLeft="true"
+            android:text="上午:"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:layout_marginLeft="5dp">
+
+        <EditText
+            android:id="@+id/Noon"
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/text2"
+            android:background="#ffffff"
+            android:ems="10"
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Noon"
+            android:layout_alignBottom="@+id/Noon"
+            android:layout_alignParentLeft="true"
+            android:text="中午:"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout 
+         android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="15dp"
+        >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/Afternoon"
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/text3"
+            android:background="#ffffff"
+            android:ems="10"
+            android:textSize="14sp" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Afternoon"
+            android:layout_alignParentLeft="true"
+            android:text="下午:"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:layout_marginLeft="5dp">
+
+        <EditText
+            android:id="@+id/Evening"
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/text4"
+            android:background="#ffffff"
+            android:ems="10"
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Evening"
+            android:layout_alignBottom="@+id/Evening"
+            android:layout_alignParentLeft="true"
+            android:text="晚上:"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+    </LinearLayout> 
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        >
+        <CheckBox 
+            android:id="@+id/addNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连续添加"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <Button
+            android:id="@+id/exit"
+           android:layout_width="50dp"
+           android:layout_height="36dp"
+           android:text="取消"
+            android:textSize="12sp"
+          android:layout_marginLeft="120dp"
+            android:background="@android:color/transparent"
+            />
+         <Button
+            android:id="@+id/Update"
+           android:layout_width="50dp"
+           android:layout_height="36dp"
+           android:text="更新"
+            android:textSize="12sp"
+              android:layout_marginLeft="10dp"
+             android:background="@android:color/transparent"
+              android:textColor="#00a8f3"
+            />
+
+         <Button
+             android:id="@+id/save"
+             android:layout_width="50dp"
+             android:layout_height="36dp"
+             android:layout_marginLeft="10dp"
+             android:background="@android:color/transparent"
+             android:text="保存"
+             android:textSize="12sp" 
+             android:textColor="#ff0000"/>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/iv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" >
+        <ImageView
+            android:id="@+id/DaoRu"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/daoru"
+             android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/DaoChu"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="81dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/daochu2"
+             android:visibility="invisible"
+            />
+    <ImageView
+            android:id="@+id/SaoMa"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/saoma"
+            android:layout_alignParentRight="true"
+             android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/Call"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="153dp"
+            android:layout_marginTop="350dp"
+            android:background="@drawable/callphone"
+             android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/JiShiBen"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+             android:layout_marginRight="77dp"
+            android:layout_marginTop="345dp"
+            android:background="@drawable/jishiben"
+             android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/JiShiBenImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignStart="@+id/DaoRuImage"
+            android:layout_alignTop="@+id/DaoRuImage"
+            android:background="@drawable/jishiben"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/DaoRuImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/bottomtext"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/daoru"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/SaoMaImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/bottomtext"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/saoma"
+            android:visibility="invisible" />
+        <ImageView
+            android:id="@+id/CallImage"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_above="@+id/bottomtext"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/callphone"
+            android:visibility="invisible" />
+        
+        <ImageView
+            android:id="@+id/DaoChuImage"
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/bottomtext"
+            android:layout_alignStart="@+id/JiShiBenImage"
+            android:layout_alignTop="@+id/JiShiBenImage"
+            android:background="@drawable/daochu2"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/PoupWindowImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomtext"
+            android:src="@drawable/poupadd" />
+
+        <TextView
+            android:id="@+id/bottomtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="10sp" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

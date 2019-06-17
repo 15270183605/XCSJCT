@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#e5e5e5">
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+            <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        
+        >
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            >
+            <ImageView 
+                android:id="@+id/LicaiText"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:src="@drawable/licaitext3"
+                />
+             <ImageView 
+                android:id="@+id/LiCaiWebView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/licaipicture"
+                android:layout_marginLeft="20dp"
+                                />    
+  </RelativeLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="家财通"
+                android:textColor="#ff0000"
+                android:textSize="20sp"
+                />
+              <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一款掌上理财App"
+                android:textColor="#00a8f3"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                android:layout_marginTop="3dp"
+                />
+            
+                <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="帮你解决理财烦恼，实现准确快速理财"
+                android:textColor="#00a8f3"
+                android:textSize="10sp"
+                android:textStyle="italic"
+                android:layout_marginTop="3dp"
+                />
+              
+        </LinearLayout>
+        <!-- <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/licaitext2"
+            /> -->
+    </RelativeLayout>
+    <ImageView 
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:id="@+id/LiCaiNotify"
+        android:src="@drawable/notify"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginBottom="85dp"
+    android:layout_marginTop="85dp"
+    >
+       <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/handphone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="40dp"
+        android:gravity="center" 
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:id="@+id/LastLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" 
+           
+          >
+
+            <tool.CircleImageView
+                android:id="@+id/LendPicture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/lastlend" />
+     <tool.EnterAnimLayout
+          android:id="@+id/LendTxet"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         >
+            <TextView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="外债管理"
+                android:textSize="15sp" />
+            </tool.EnterAnimLayout>
+        </LinearLayout>
+         <LinearLayout
+            android:id="@+id/LastLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+             android:layout_marginLeft="50dp"
+            >
+
+            <tool.CircleImageView
+                android:id="@+id/ShouzhiPicture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/lastshou" />
+        <tool.EnterAnimLayout
+             android:id="@+id/ShouText"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         >
+            <TextView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="收支管理"
+                android:textSize="15sp" />
+            </tool.EnterAnimLayout>
+        </LinearLayout>
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+          android:gravity="center" 
+          android:orientation="vertical"
+          android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/LastLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" 
+         >
+
+            <tool.CircleImageView
+                android:id="@+id/DataPicture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/data" />
+ <tool.EnterAnimLayout
+     android:id="@+id/DataText"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="数据管理"
+                android:textSize="15sp" />
+            </tool.EnterAnimLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LastLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" 
+             android:layout_marginTop="20dp">
+
+            <tool.CircleImageView
+                android:id="@+id/MorePicture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/lastmore" />
+ <tool.EnterAnimLayout
+      android:id="@+id/MoreApplyText"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         >
+            <TextView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="更多应用"
+                android:textSize="15sp" />
+            </tool.EnterAnimLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center" 
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+<LinearLayout
+            android:id="@+id/LastLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" 
+            >
+
+            <tool.CircleImageView
+                android:id="@+id/DingweiPicture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/dingwei" />
+ <tool.EnterAnimLayout
+      android:id="@+id/LoactionTxet"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         >
+            <TextView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="定位（第三方服务）"
+                android:textSize="15sp" />
+            </tool.EnterAnimLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/LastLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" 
+             android:layout_marginTop="20dp"
+           >
+
+            <tool.CircleImageView
+                android:id="@+id/WeatherPicture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/weather" />
+ <tool.EnterAnimLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+          android:id="@+id/WeatherText"
+         >
+            <TextView
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="天气（第三方服务）"
+                android:textSize="15sp" />
+            </tool.EnterAnimLayout>
+        </LinearLayout>
+
+        
+        </LinearLayout>
+       </RelativeLayout>     
+</LinearLayout>
+            <Button
+        android:id="@+id/letstart"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/skipshape"
+        android:text="立即体验"
+        android:textColor="#3333ff"
+        android:textSize="15sp" />
+</RelativeLayout>

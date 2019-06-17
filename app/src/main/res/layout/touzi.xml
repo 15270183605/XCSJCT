@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:zsr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#e5e5e5"
+        >
+       <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:clipChildren="false">
+            <viewpagerlib.view.BannerViewPager
+                android:id="@+id/TouZiBanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:clipChildren="false"
+                zsr:banner_isloop="true"
+                zsr:banner_looptime="3000"
+                zsr:banner_switchtime="600" />
+
+            <viewpagerlib.indicator.ZoomIndicator
+                android:id="@+id/TouZiZoom"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                zsr:zoom_alpha_min="0.5"
+                zsr:zoom_leftmargin="10dp"
+                zsr:zoom_max="1.5"
+                zsr:zoom_selector="@drawable/bottom_circle" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

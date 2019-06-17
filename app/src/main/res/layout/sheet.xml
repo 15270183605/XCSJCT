@@ -1,0 +1,80 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/GraphNoData"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/nodata"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/sheetShowDataLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" 
+                    android:orientation="vertical"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="3dp"
+                     >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="标题"
+                            android:textColor="#ff0000"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                   <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1.5dip"
+                        android:background="#B4B3B3" 
+                       />
+                    <ListView
+                        android:id="@+id/sheetlistView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:divider="#B4B3B3"
+                        android:dividerHeight="1.5dip"
+                        android:scrollbars="none"
+                         >
+                    </ListView>
+                   <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dip"
+                        android:background="#B4B3B3" 
+                        android:paddingRight="3dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

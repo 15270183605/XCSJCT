@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="26dp"
+       android:orientation="horizontal"
+       >
+
+       <TextView
+           android:id="@+id/yijianText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/yijianCheckBox"
+           android:layout_alignBottom="@+id/yijianCheckBox"
+           android:layout_alignParentLeft="true"
+            android:textColor="#33da33"
+           android:text="一键锁单"
+           android:textSize="13sp" />
+
+       <CheckBox
+           android:id="@+id/yijianCheckBox"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginRight="28dp"
+           android:checked="true" />
+
+   </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"
+       >
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/XiJiePN"
+           android:text="工资"
+           android:textSize="15sp"
+           android:layout_marginLeft="20dp"
+           />
+        <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/XiJieMN"
+           android:text="明细名"
+           android:textSize="15sp"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="20dp"
+           />
+         <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/XiJieCount"
+           android:text="￥5000"
+           android:textSize="15sp"
+           android:layout_below="@+id/XiJiePN"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ff0000"
+            android:layout_marginTop="3dp"
+           /> <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/XiJieProperty"
+           android:text="收益项"
+           android:textSize="15sp"
+           android:textColor="#ff0000"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="20dp"
+             android:layout_below="@+id/XiJieMN"
+             android:layout_marginTop="3dp"
+           />
+           
+   </RelativeLayout>
+
+</LinearLayout>

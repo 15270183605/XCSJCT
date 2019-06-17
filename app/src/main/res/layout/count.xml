@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+  android:background="#e5e5e5"
+   >
+  <RelativeLayout 
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      
+      >
+      <ImageView 
+          android:id="@+id/CountBack"
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:src="@drawable/blackback"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="5dp"
+          />
+      <LinearLayout 
+          android:layout_width="30dp"
+          android:layout_height="20dp"
+          android:orientation="horizontal"
+          android:gravity="center"
+            android:background="@drawable/putongpost"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:layout_centerVertical="true"
+          >
+      <TextView 
+          android:id="@+id/CountSelectWay"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="月度"
+          android:textSize="11sp"
+        
+          />
+      </LinearLayout>
+      <LinearLayout 
+          android:layout_width="50dp"
+          android:layout_height="20dp"
+          android:orientation="horizontal"
+          android:gravity="center"
+            android:background="@drawable/putongpost"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_centerVertical="true"
+          >
+      <TextView 
+          android:id="@+id/Predict"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="期初预算"
+          android:textSize="11sp"
+        
+          />
+      </LinearLayout>
+       <ImageView 
+          android:id="@+id/Select"
+          android:layout_width="15dp"
+          android:layout_height="15dp"
+          android:src="@drawable/select"
+           android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+          />
+  </RelativeLayout>
+  
+  <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+        <LinearLayout 
+           android:id="@+id/CountMonthLayout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+          
+           >
+       <Spinner 
+           android:id="@+id/YearSpinner"
+           android:layout_width="wrap_content"
+           android:layout_height="30dp"
+           />
+     <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="年"
+           android:textSize="15sp"
+           />
+     <LinearLayout 
+         android:id="@+id/MonthSpinnerLayout"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:gravity="center_vertical"
+         >
+       <Spinner 
+           android:id="@+id/CountMonthSpinner"
+           android:layout_width="wrap_content"
+           android:layout_height="30dp"
+         
+           />
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="月 "
+           android:textSize="15sp"
+           />
+       </LinearLayout>
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="总账"
+           android:textSize="18sp"
+           android:textColor="#ff0000"
+           android:layout_marginLeft="3dp"
+           />
+       </LinearLayout>
+  <!--      
+       <LinearLayout 
+           android:id="@+id/CountYearLayout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:visibility="gone"
+           >
+       <TextView 
+           android:id="@+id/CountYearText"
+           android:layout_width="40dp"
+           android:layout_height="18dp"
+           android:textSize="12sp"
+           android:gravity="center"
+           />
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="年"
+           android:textSize="15sp"
+           />
+     
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="总账"
+           android:textSize="18sp"
+           android:textColor="#ff0000"
+           android:layout_marginLeft="3dp"
+           />
+       </LinearLayout> -->
+      <!-- <ViewFlipper 
+          android:id="@+id/CountViewFlipper"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          
+          ></ViewFlipper> -->
+        
+ <!--     
+  <LinearLayout 
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+  <android.support.v4.view.ViewPager
+      android:id="@+id/CountViewPager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      />
+
+   </LinearLayout> -->
+   <ListView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/CountDataListView"
+       ></ListView>
+  
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jiacaitong"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+    <!-- 打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 发短信的权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 连接网络的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 调用相机拍照权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动权限 -->
+    <uses-feature android:name="android.hardware.camera" /> <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" /> <!-- 自动聚焦权限 -->
+
+
+    <!-- 把数据写入sd内存的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 百度地图定位功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name="com.example.jiacaitong.MyApp"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/licai"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="loginOrRegister.Main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="start.ThirdStartActivity" >
+        </activity>
+        <activity android:name="start.FirstStartActivity" >
+        </activity>
+        <activity android:name="start.SecondStartActivity" >
+        </activity>
+        <activity android:name="start.LastStartActivity" >
+        </activity>
+        <activity android:name="start.LiCaiKnowledge" >
+        </activity>
+        <activity android:name="com.example.jiacaitong.MainActivity" >
+        </activity>
+        <activity android:name="start.StartMain" >
+        </activity>
+        <activity android:name="work.basic" >
+        </activity>
+        <activity android:name="work.shouye" >
+        </activity>
+        <activity android:name="work.mine" >
+        </activity>
+        <activity android:name="work.life" >
+        </activity>
+        <activity android:name="work.JinRong" >
+        </activity>
+        <activity android:name="shouye.AddIncomeorPay" >
+        </activity>
+        <activity android:name="shouye.MenuSafeGuard" >
+        </activity>
+        <activity android:name="shouye.YingShouYingFu" >
+        </activity>
+        <activity android:name="shouye.SystemSet" >
+        </activity>
+        <activity android:name="shouye.YingShouYingFuList" >
+        </activity>
+        <activity android:name="shouye.Count" >
+        </activity>
+        <activity android:name="shouye.Data" >
+        </activity>
+        <activity android:name="shouye.GraphContainer" >
+        </activity>
+        <activity android:name="shouye.ShowPredictData" >
+        </activity>
+        <activity android:name="shouye.GuDingCount" >
+        </activity>
+        <activity
+            android:name="shouye.Help"
+            android:theme="@style/MyTransparent" >
+        </activity>
+        <activity android:name="shouye.ManageNote" >
+        </activity>
+        <activity android:name="shouye.MyIncome" >
+        </activity>
+        <activity android:name="shouye.MyPay" >
+        </activity>
+        <activity android:name="shouye.AddNote" >
+        </activity>
+        <activity android:name="shouye.DataHorizontal" >
+        </activity>
+        <activity android:name="shouye.Graph" >
+        </activity>
+        <activity android:name="shouye.IncomePayLock" >
+        </activity>
+        <activity android:name="shouye.ShouFuHeXiao" >
+        </activity>
+        <activity android:name="shouye.JieZhangClassCheck" >
+        </activity>
+        <activity android:name="shouye.Sheet" >
+        </activity>
+        <activity android:name="mine.MyInfo" >
+        </activity>
+        <activity android:name="mine.PictureList" >
+        </activity>
+        <activity android:name="mine.MySet" >
+        </activity>
+        <activity android:name="copyshouye.CopyShouYeActivity" >
+        </activity>
+        <activity android:name="copyshouye.copyshouye" >
+        </activity>
+        <activity android:name="copyshouye.ActivityViewGroup" >
+        </activity>
+        <activity android:name="copyshouye.MoreApply" >
+        </activity>
+        <activity android:name="copyshouye.ShowAdDataActivity" >
+        </activity>
+        <activity android:name="dingWei.DingWei" >
+        </activity>
+        <activity android:name="festival.FestivalHttpActivity" >
+        </activity>
+        <activity android:name="usercenter.UserCenter" >
+        </activity>
+        <activity android:name="usercenter.UserShouZhi" >
+        </activity>
+        <activity android:name="usercenter.UserAddShouZhiCode" >
+        </activity>
+        <activity android:name="userrefreedback.UserRefreedBack" >
+        </activity>
+        <activity android:name="userrefreedback.ChatOnlineActivity" >
+        </activity>
+        <activity android:name="userrefreedback.PostOfficeActivity" >
+        </activity>
+        <activity android:name="userrefreedback.SendMessageActivity" >
+        </activity>
+        <activity android:name="userrefreedback.SendMessageTextActivity" >
+        </activity>
+        <activity android:name="add.Call" >
+        </activity>
+        <activity android:name="add.SaoMa" >
+        </activity>
+        <activity android:name="add.ExportData" >
+        </activity>
+        <activity android:name="add.ImportData" >
+        </activity>
+        <activity android:name="add.JiShiBen" >
+        </activity>
+        <activity android:name="jishiben.ImportantNote" >
+        </activity>
+        <activity android:name="jishiben.PictureActivity1" >
+        </activity>
+        <activity android:name="jishiben.UnImNote" >
+        </activity>
+        <activity android:name="jishiben.VideoActivity" >
+        </activity>
+        <activity android:name="jishiben.PlayVideo" >
+        </activity>
+        <activity android:name="jinrong.TouZiActivity" />
+        <activity android:name="jinrong.ChuXuActivity" />
+        <activity android:name="jinrong.GuPiaoActivity" />
+        <activity android:name="jinrong.BaoXianActivity" />
+        <activity android:name="jinrong.CaiPiaoActivity" />
+        <activity android:name="life.LifeMoney" />
+        <activity android:name="life.YiSheBao" />
+        <activity android:name="life.WuXian" />
+        <activity android:name="life.JiaoYu" />
+        <activity android:name="life.FangDai" />
+        <activity android:name="life.CheDai" />
+        <activity android:name="life.GongYi" />
+        <activity android:name="life.lifemoney.ChongZhi" />
+        <activity android:name="life.lifemoney.ChongZhiJiLu" />
+        <activity
+            android:name="saoma.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="6BFlhQi3jDHKiU141Bicjq6G4d0iByjn" /> <!-- 百度地图的key -->
+    </application>
+
+</manifest>

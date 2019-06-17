@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/UserPayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抱歉，您暂未开通支付服务!"
+            android:textColor="#756969"
+          android:textSize="20sp"
+            />
+        <Button 
+            android:id="@+id/OpenUserPay"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="立即开通"
+            android:textColor="#ff0000"
+            android:textSize="18sp"
+            android:background="@drawable/backgroundshape"
+            android:layout_marginTop="60dp"
+            />
+    </LinearLayout>
+<RelativeLayout 
+    android:id="@+id/UserPayLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#ffffff"
+    ><LinearLayout 
+        android:id="@+id/LayoutLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+         android:orientation="vertical"
+         android:layout_marginBottom="100dp"
+         
+        >
+        <ViewFlipper 
+               android:id="@+id/UserShouCodeFlipper"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                          ></ViewFlipper>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:textColor="#ff0000"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/BaoShouCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付宝"
+                android:textColor="#1422ef"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/WeiXinShouCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="微信"
+                android:textColor="#0ee34a"
+                android:textSize="15sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>
+</LinearLayout>

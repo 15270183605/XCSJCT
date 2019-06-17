@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+   >
+   <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+          android:orientation="vertical"
+           >
+    <LinearLayout 
+        android:id="@+id/TopNoData"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        >
+        <TextView 
+            android:id="@+id/CountNoDataText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3月无数据"
+            android:textColor="#ff0000"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/TotalCountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       
+        > <com.github.mikephil.charting.charts.PieChart
+          android:id="@+id/Countpiechart"
+          android:layout_width="fill_parent"
+          android:layout_height="180dp" /> 
+ <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+   
+    >
+    <include 
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       layout="@layout/countlistviewitem"
+        />
+   <ListView 
+       android:id="@+id/CountListView"
+       android:layout_width="match_parent"
+       android:layout_height="246dp"
+       ></ListView>
+   <View 
+    android:layout_width="match_parent"
+    android:layout_height="0.3dp"
+    android:background="#000000"
+    />
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+<TextView 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="数据分析"
+    android:textSize="15sp"
+     
+    />
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/edittextbackground"
+    android:layout_marginRight="3dp"
+    android:layout_marginLeft="3dp"
+    >
+ <include 
+        android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       layout="@layout/dataanalysisitem"
+        />
+    <ListView 
+        android:id="@+id/DataAnalysis"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="@null"
+        />
+    <View 
+    android:layout_width="match_parent"
+    android:layout_height="0.3dp"
+    android:background="#000000"
+    />
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+    <ImageView 
+        android:id="@+id/Expand"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/xiala1"
+        />
+</LinearLayout>
+
+<LinearLayout 
+    android:id="@+id/ZheXianLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    >  
+ <com.github.mikephil.charting.charts.LineChart
+          android:id="@+id/CountLinechart"
+          android:layout_width="fill_parent"
+          android:layout_height="180dp" />  
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+    <TextView 
+        android:id="@+id/JieZhangCountDataTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="16sp"
+        />
+</LinearLayout>
+</LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

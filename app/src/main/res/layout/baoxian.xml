@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:zsr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#e5e5e5"
+        >
+ <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <viewpagerlib.view.BannerViewPager
+                android:id="@+id/BaoXianBanner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                zsr:banner_switchtime="600"
+                zsr:banner_isloop="true"
+                zsr:banner_looptime="3000" />
+
+            <viewpagerlib.indicator.TextIndicator
+                android:id="@+id/BaoXianText"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="5dp"
+                zsr:word_circle_color="@android:color/transparent"
+                zsr:word_show_circle="true"
+                zsr:word_text_color="@color/white"
+                zsr:word_text_size="14sp"
+                />
+        </FrameLayout>
+        </LinearLayout>
+</LinearLayout>

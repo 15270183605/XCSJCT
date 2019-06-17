@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ddebf8"
+     android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+       
+        >
+        <TextView 
+            android:id="@+id/TopText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="      尊敬的张三用户您好，由于您即将要访问的是一个特殊反馈界面，在您进入之前我们将对您的问题进行测试评估，若您的问题等级在4级以上，您就有权力访问，在特殊反馈中您的问题将直达产品负责人，第一时间为您解决问题，若带来诸多不便请见谅!"
+            />
+    </LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   android:layout_marginTop="5dp"
+    >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="问题1:请您简单介绍一下我们这款产品的功能，用处和目的？(100字以内)"
+        android:textSize="10sp"
+        />
+   
+        <EditText 
+            android:id="@+id/Answer1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="13sp"
+            android:hint="请给出您的回答"
+            android:background="#ffffff"
+            android:layout_marginTop="3dp"
+            />
+   
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+       >
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="问题2:请问您在使用时遇到较多的问题是什么(100字以内)"
+        android:textSize="10sp"
+        />
+   
+        <EditText 
+            android:id="@+id/Answer2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="13sp"
+            android:hint="请给出您的回答"
+            android:background="#ffffff"
+            android:layout_marginTop="3dp"
+            />
+   
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+      android:layout_marginTop="5dp"
+    >
+            <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="问题3:请您简单介绍一下您是如何使用我们这款产品进行理财的？(100字以内)"
+        android:textSize="10sp"
+        />
+   
+        <EditText 
+            android:id="@+id/Answer3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="13sp"
+            android:hint="请给出您的回答"
+            android:background="#ffffff"
+            android:layout_marginTop="3dp"
+            />
+   
+</LinearLayout>
+<LinearLayout 
+    android:id="@+id/AssessLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"   
+    android:visibility="gone"
+     >
+    <RatingBar
+        android:id="@+id/AssessRateingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stepSize="1.0"
+        android:rating="0.0"
+        />
+    <TextView 
+        android:id="@+id/Rank"
+        android:text="4级"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        />
+</LinearLayout>
+<LinearLayout 
+    android:id="@+id/TextOpenation"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+   
+    >
+    <Button 
+        android:id="@+id/Commit"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:background="@drawable/putongpost"
+        android:text="提交"
+        android:textSize="15sp"
+        />
+     <Button 
+        android:id="@+id/GiveUp"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:background="@drawable/putongpost"
+        android:text="放弃答题"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        />
+</LinearLayout>
+    <Button 
+        android:id="@+id/ComeOrExit"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/putongpost"
+        android:text="进入"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

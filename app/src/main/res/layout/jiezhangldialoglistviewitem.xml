@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+       
+   <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+    <TextView 
+        android:id="@+id/JiZhangTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019-01"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="13sp"
+        />
+</LinearLayout> 
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView 
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="收入"
+            android:textSize="13sp"
+           android:gravity="center"
+            />
+        <TextView 
+            android:id="@+id/TotalDataShou"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:textColor="#ff0000"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            />
+         <TextView 
+            android:id="@+id/TotalNumShou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60"
+            android:textColor="#ff0000"
+            android:textSize="13sp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            />
+          <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="笔"
+            android:textSize="13sp"
+            android:layout_marginLeft="3dp"
+            />
+    </LinearLayout>
+<LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView 
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="支出"
+            android:textSize="13sp"
+           android:gravity="center"
+            />
+        <TextView 
+            android:id="@+id/TotalDataZhi"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:textColor="#ff0000"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            />
+         <TextView 
+            android:id="@+id/TotalNumZhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60"
+            android:textColor="#ff0000"
+            android:textSize="13sp"
+            android:layout_marginLeft="20dp"
+            />
+          <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="笔"
+            android:textSize="13sp"
+            android:layout_marginLeft="3dp"
+            />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="借款"
+        android:textSize="13sp" 
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/TotalDataYingShou"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="1000"
+        android:textColor="#ff0000"
+        android:textSize="13sp" 
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/TotalNumYingShou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="60"
+        android:textColor="#ff0000"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:text="笔"
+        android:textSize="13sp" />
+</LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView 
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="贷款"
+            android:textSize="13sp"
+android:gravity="center"
+            />
+        <TextView 
+            android:id="@+id/TotalDataYingFu"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:textColor="#ff0000"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            />
+         <TextView 
+            android:id="@+id/TotalNumYingFu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60"
+            android:textColor="#ff0000"
+            android:textSize="13sp"
+            android:layout_marginLeft="20dp"
+            />
+          <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="笔"
+            android:textSize="13sp"
+            android:layout_marginLeft="3dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="实收"
+            android:textSize="13sp" 
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/TotalDataShiShou"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="1000"
+            android:textColor="#ff0000"
+            android:textSize="13sp" 
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/TotalNumShiShou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="60"
+            android:textColor="#ff0000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="笔"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView 
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="实付"
+            android:textSize="13sp"
+          android:gravity="center"
+            />
+        <TextView 
+            android:id="@+id/TotalDataShiFu"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="1000"
+            android:textColor="#ff0000"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            />
+         <TextView 
+            android:id="@+id/TotalNumShiFu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60"
+            android:textColor="#ff0000"
+            android:textSize="13sp"
+            android:layout_marginLeft="20dp"
+            />
+          <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="笔"
+            android:textSize="13sp"
+            android:layout_marginLeft="3dp"
+            />
+  
+    </LinearLayout>
+</LinearLayout>

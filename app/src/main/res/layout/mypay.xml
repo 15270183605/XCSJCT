@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="shouye.MyPay" >
+
+    <LinearLayout
+         android:id="@+id/LayoutTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#00a8f3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="排序:"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="时间"
+            android:textColor="#ff0000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <tool.CircleImageView
+            android:id="@+id/timeupdown"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            
+            android:src="@drawable/direction" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="金额"
+            android:textColor="#ff0000"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <tool.CircleImageView
+            android:id="@+id/countupdown"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/direction" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:background="#b83dba" />
+
+        <TextView
+            android:id="@+id/addYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="+"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="2018"
+            android:textColor="#ff0000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/cutYear"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="—"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:background="#b83dba" />
+
+        <TextView
+            android:id="@+id/addMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="+"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="06"
+            android:textColor="#ff0000"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/cutMonth"
+            android:layout_width="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="—"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+         <EditText 
+         android:id="@+id/PayseachMessage"
+         android:layout_width=" 30dp"
+         android:layout_height="15dp"
+        android:inputType="number"
+         android:layout_marginLeft="5dp"
+         android:textSize="13sp"
+         android:hint="几号"
+         android:background="@drawable/editbackgroundshape"
+         />
+     <ImageView 
+         android:id="@+id/Payseach"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/seach1"
+         android:layout_marginLeft="3dp"
+         ></ImageView>
+    </LinearLayout>
+     <LinearLayout 
+        android:id="@+id/datanodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_below="@+id/LayoutTitle"
+        android:orientation="vertical"
+       >
+     <TextView 
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="抱歉，当前暂无数据！"
+        android:textColor="#ff0000"
+        android:textSize="16sp"
+           />
+     </LinearLayout>
+<RelativeLayout
+    android:id="@+id/Title"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+      android:layout_below="@+id/LayoutTitle"
+    >
+    <tool.MyListView
+        android:id="@+id/PayList"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e5e5e5" />
+    <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="266dp"
+     android:layout_marginBottom="80dp"
+     android:gravity="center">
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     android:gravity="center"
+    >
+    <tool.CircleImageView
+     android:layout_width="30dp"
+     android:layout_height="30dp"
+     android:src="@drawable/yuyinadd"
+     android:id="@+id/SeachLuYin"
+     
+     />
+      <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[1~12]"
+                android:textColor="#ff0000"
+                android:textSize="10sp"
+                android:layout_marginLeft="5dp"
+                /> 
+</LinearLayout>
+  
+     <tool.CircleImageView
+         android:id="@+id/ToBottom"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:src="@drawable/return1" 
+      android:layout_marginRight="17dp"
+      android:layout_marginTop="6dp"
+    />
+ <tool.CircleImageView
+     android:layout_width="30dp"
+     android:layout_height="30dp"
+     android:src="@drawable/bottom1"
+     android:id="@+id/returnTop"
+      android:layout_marginRight="17dp"
+      android:layout_marginTop="6dp"
+      android:visibility="gone"
+     />
+</LinearLayout>
+</RelativeLayout>
+
+
+</RelativeLayout>

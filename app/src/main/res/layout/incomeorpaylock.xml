@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4eded"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/shouru"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收入单"
+                android:textColor="#ff0000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/incomeIdTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="编号:"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/incomeId"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/edittextbackground"
+                    android:ems="10"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/incomemakemenu1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="单别:"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/incomeclass"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/edittextbackground"
+                    android:ems="10"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金额:"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/incomeamount"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/edittextbackground"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/incomemakemenu2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="来源:"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/incomesource"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/edittextbackground"
+                    android:ems="10"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/makemenu"
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:text="制单人:"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/makemenuperson"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edittextbackground"
+                    android:ems="10"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/makemenu4"
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="制单时间:"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/incomemaketime"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edittextbackground"
+                    android:ems="10"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="备注 :"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/incomemakenote"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/edittextbackground"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="状态:"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/status"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/edittextbackground"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/lock"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="锁定"
+                    android:textSize="8sp" />
+
+                <Button
+                    android:id="@+id/update"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="修改"
+                    android:textSize="8sp" />
+
+                <Button
+                    android:id="@+id/Exit"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="退出"
+                    android:textSize="8sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/incomeIdTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="编号:"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/incomeId1"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/edittextbackground"
+                    android:ems="10"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/incomemakemenu11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="单别:"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/incomeclass1"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/edittextbackground"
+                    android:ems="10"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="金额:"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/incomeamount1"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/edittextbackground"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/incomemakemenu21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="来源:"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/incomesource1"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/edittextbackground"
+                    android:ems="10"
+                    android:textSize="14sp" />
+
+             
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/makemenu1"
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:text="制单人:"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/makemenuperson1"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edittextbackground"
+                    android:ems="10"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/makemenu41"
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="制单时间:"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/incomemaketime1"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edittextbackground"
+                    android:ems="10"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="备注 :"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/incomemakenote1"
+                    android:layout_width="100dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/edittextbackground"
+                    android:textSize="14sp" />
+
+            
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="状态:"
+                        android:textColor="@android:color/holo_green_dark"
+                        android:textSize="12sp" 
+                         android:layout_marginLeft="25dp"/>
+
+                    <TextView
+                        android:id="@+id/status1"
+                        android:layout_width="100dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/edittextbackground"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/Exit1"
+                    android:layout_width="255dp"
+                    android:layout_height="30dp"
+                  
+                    android:background="@drawable/edittextbackground"
+                    android:text="退出"
+                    android:textSize="13sp" />
+            </LinearLayout>
+            </LinearLayout>
+
+            
+        </LinearLayout>
+    </LinearLayout>
+

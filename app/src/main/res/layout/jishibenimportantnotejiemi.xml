@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="抱歉，该事件已加密，查看前请先解密!"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+     <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:orientation="horizontal"
+      android:gravity="center"
+       android:layout_marginTop="10dp"
+       >
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="输入密钥:"
+           android:textSize="13sp"
+           />
+   <EditText 
+      android:id="@+id/JieMiEdit"
+       android:layout_width="150dp"
+       android:layout_height="30dp"
+       android:hint="解密密钥"
+       android:textColor="#ff0000"
+       android:textSize="13sp"
+       android:background="@drawable/edittextbackground"
+       android:layout_marginLeft="3dp"
+        android:inputType="numberPassword"
+       />
+   
+   </LinearLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    >
+    <TextView 
+        android:id="@+id/UpdatePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我要改密钥"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="15sp"
+       android:layout_toLeftOf="@+id/OpenPassword"
+       android:layout_marginRight="25dp"
+        />
+    <TextView 
+        android:id="@+id/OpenPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="解密"
+        android:textColor="#ff0000"
+        android:textSize="15sp"
+       android:layout_toLeftOf="@+id/CancelOpenPassword"
+       android:layout_marginRight="25dp"
+        />
+    <TextView 
+        android:id="@+id/CancelOpenPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textSize="15sp"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="30dp"
+        />
+</RelativeLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    
+    ></LinearLayout>
+</LinearLayout>

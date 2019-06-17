@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+  <RelativeLayout 
+      android:layout_width="match_parent"
+      android:layout_height="25dp"
+      
+      >
+      <TextView 
+          android:id="@+id/Text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="文件名:"
+          android:textSize="13sp"
+          android:layout_marginLeft="10dp"
+          android:layout_centerVertical="true"
+          />
+        <TextView 
+          android:id="@+id/FileName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="文件名:"
+          android:textSize="13sp"
+          android:layout_toRightOf="@+id/Text"
+          android:layout_marginLeft="5dp"
+          android:textColor="#ff0000"
+            android:layout_centerVertical="true"
+          />
+         <TextView 
+          android:id="@+id/Text3"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="时间:"
+          android:textSize="13sp"
+          android:layout_toLeftOf="@+id/FileTime"
+            android:layout_centerVertical="true"
+          />
+          <TextView 
+          android:id="@+id/FileTime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="2018-08-30"
+          android:textSize="13sp"
+          android:textColor="#ff0000"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+          />
+        
+              
+  </RelativeLayout>  
+
+  <RelativeLayout 
+      android:layout_width="match_parent"
+      android:layout_height="25dp"
+      
+      >
+      <TextView 
+          android:id="@+id/Text2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="文件地址:"
+          android:textSize="13sp"
+          android:layout_marginLeft="10dp"
+          android:layout_centerVertical="true"
+          />
+        <TextView 
+          android:id="@+id/FileAddress"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="文件地址:"
+          android:textSize="13sp"
+          android:layout_toRightOf="@+id/Text2"
+          android:layout_marginLeft="5dp"
+          android:textColor="#ff0000"
+            android:layout_centerVertical="true"
+          />
+         <TextView 
+          android:id="@+id/Text1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="项目名:"
+          android:textSize="13sp"
+          android:layout_toLeftOf="@+id/ClassName"
+            android:layout_centerVertical="true"
+          />
+          <TextView 
+          android:id="@+id/ClassName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="收入"
+          android:textSize="13sp"
+          android:textColor="#ff0000"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="10dp"
+          android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+          />
+        
+  </RelativeLayout>  
+  
+</LinearLayout>

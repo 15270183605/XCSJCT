@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:zsr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#e5e5e5"
+        >
+      <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <viewpagerlib.view.BannerViewPager
+                android:id="@+id/GuPiaoBanner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                zsr:banner_loop_max_count="3"
+                zsr:banner_switchtime="600"
+                zsr:banner_isloop="true"
+                zsr:banner_looptime="3000" />
+
+            <viewpagerlib.indicator.TransIndicator
+                android:id="@+id/GuPiaoTran"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="10dp"
+                zsr:trans_defaultcolor="@color/gray_cccc"
+                zsr:trans_leftmargin="10dp"
+                zsr:trans_movecolor="@color/white"
+                zsr:trans_type="round"
+                zsr:trans_round_radius="4dp"
+                zsr:trans_width="15dp"
+                zsr:trans_height="5dp"/>
+        </FrameLayout>
+</LinearLayout>
+</LinearLayout>

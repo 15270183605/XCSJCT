@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="项目名:"
+            android:textSize="13sp"
+            />
+        <EditText 
+            android:id="@+id/ProjectEdit"
+            android:layout_width="90dp"
+            android:layout_height="27dp"
+            android:background="@drawable/edittextbackground"
+            android:layout_marginLeft="3dp"
+            android:gravity="center_vertical"
+            android:textSize="13sp"
+            />
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="类型名:"
+            android:textSize="13sp"
+            android:layout_marginLeft="10dp"
+           
+            />
+        <RelativeLayout
+            android:id="@+id/GuDingLayout"
+            android:layout_width="90dp"
+            android:layout_height="27dp"
+            android:background="@drawable/edittextbackground"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp" 
+             android:layout_marginLeft="3dp">
+
+            <TextView
+                android:id="@+id/ClassEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="固定收入"
+                android:textColor="#333333"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/GuExpandDown"
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/expanddown" />
+        </RelativeLayout>
+        <TextView 
+            android:id="@+id/ClassTextView"
+            android:layout_width="90dp"
+            android:layout_height="27dp"
+            android:background="@drawable/edittextbackground"
+            android:layout_marginLeft="3dp"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="15dp"
+     android:gravity="center_vertical"
+     android:orientation="horizontal" >
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="金    额:"
+         android:textSize="13sp" />
+
+     <EditText
+         android:id="@+id/GuDingCountEdit"
+         android:layout_width="237dp"
+         android:layout_height="27dp"
+         android:layout_marginLeft="3dp"
+         android:background="@drawable/edittextbackground"
+         android:gravity="center_vertical"
+         android:textSize="13sp" />
+     
+ </LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+    <TextView 
+        android:id="@+id/AddProjectMingXi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+添加明细"
+        android:textColor="#ff0000"
+        android:textSize="15sp"
+        />
+    <TextView 
+        android:id="@+id/LookProjectMingXi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看明细"
+        android:textColor="#ff0000"
+        android:textSize="15sp"
+        android:layout_marginLeft="50dp"
+        />
+</LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        >
+        <TextView 
+            android:id="@+id/BangDing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绑定"
+            android:textColor="#ff0000"
+            android:textSize="15sp"
+           android:layout_toLeftOf="@+id/UpdateGuCount"
+           android:layout_marginRight="30dp"
+            />
+         <TextView 
+            android:id="@+id/CancelGuCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            />
+          <TextView 
+            android:id="@+id/UpdateGuCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="15sp"
+            android:layout_toLeftOf="@+id/CancelGuCount"
+             android:layout_marginRight="30dp"
+            />
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        ></LinearLayout>
+</LinearLayout>

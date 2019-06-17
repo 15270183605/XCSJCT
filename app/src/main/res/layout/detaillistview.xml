@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+  <View
+                android:layout_width="wrap_content"
+                android:layout_height="1.5dip"
+                android:background="#B4B3B3" />
+
+            <ListView
+                android:id="@+id/SheetDatasDetailListView"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#B4B3B3"
+                android:dividerHeight="1.5dip"
+                android:maxHeight="300dp"
+                android:scrollbars="none" >
+            </ListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dip"
+                android:background="#B4B3B3"
+                android:paddingRight="3dp" />
+</LinearLayout>

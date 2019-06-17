@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        >
+<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+    <TextView 
+       android:text="一键模式"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        />
+   <Switch
+        android:layout_marginLeft="30dp"
+        android:id="@+id/YiJianSwitch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:switchMinWidth="20dp"
+        android:textOn="开"
+        android:textOff="关"
+        android:textAppearance="@style/OffTextColor"
+        android:track="@drawable/switchstytlebackground"
+         android:thumb="@drawable/switchstytlebutton"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="20dp"
+        
+       />
+</RelativeLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     android:visibility="gone"
+     android:id="@+id/SystemTopYiJianLayout"
+    >
+<ListView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/YiJianSelectList"
+   
+    ></ListView>   
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键锁定，锁定一切未锁定单据，无需单张锁定"
+            android:textSize="12sp"
+            
+            />
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键核销，核销有往来的外来数据（如，应收与实收），无需单张核销"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            />
+          <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键结账，一切单据入账，无需经过繁琐操作，但需谨慎使用!"
+            android:textSize="12sp"
+              android:layout_marginTop="3dp"
+            />
+    </LinearLayout>
+</LinearLayout> 
+</LinearLayout>
+</LinearLayout>

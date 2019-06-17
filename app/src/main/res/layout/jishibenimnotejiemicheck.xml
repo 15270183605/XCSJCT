@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="此事件暂未加密，是否需要加密?"
+            android:textColor="#ff0000"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    >
+    <TextView 
+        android:id="@+id/NOJiaMi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="不加密"
+        android:textColor="#ff0000"
+        android:textSize="15sp"
+       android:layout_toLeftOf="@+id/JiaMi"
+       android:layout_marginRight="25dp"
+        />
+    <TextView 
+        android:id="@+id/JiaMi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加密"
+        android:textSize="15sp"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="30dp"
+        />
+</RelativeLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    
+    ></LinearLayout>
+</LinearLayout>

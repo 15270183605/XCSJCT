@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <attr name="rightPadding" format="dimension"/>
+   <attr name="drawerType" format="boolean"/>
+   <declare-styleable name="SlidingMenu">
+       <attr name="rightPadding"/>
+       <attr name="drawerType"/>
+   </declare-styleable>
+  <!--  ppt动画 -->
+   <declare-styleable name="EnterAnimLayout">
+        <attr name="isVisibleAtFirst" format="boolean"/>
+
+    </declare-styleable>
+</resources>

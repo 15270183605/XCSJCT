@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#e5e5e5">
+
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/DateId"
+            android:layout_width="13dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="1"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3" />
+
+        <TextView
+            android:id="@+id/EarlyMorning"
+            android:layout_width="53dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:padding="2dp"
+           android:singleLine="true"
+            android:text="早上"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3" />
+
+        <TextView
+            android:id="@+id/Morning"
+            android:layout_width="53dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape1"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="上午"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3" />
+
+        <TextView
+            android:id="@+id/Noon"
+            android:layout_width="53dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape2"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="中午"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3" />
+
+        <TextView
+            android:id="@+id/Afternoon"
+            android:layout_width="53dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape3"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="下午"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1.5dip"
+            android:layout_height="fill_parent"
+            android:background="#B4B3B3" />
+
+        <TextView
+            android:id="@+id/Evening"
+            android:layout_width="53dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape4"
+            android:gravity="center"
+            android:padding="2dp"
+            android:singleLine="true"
+            android:text="晚上"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+ 
+ <!-- <ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+显示多少节课
+<LinearLayout
+android:layout_width="25dp"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:gravity="center">
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="92dp"
+android:text="周一"
+android:textSize="10dp"
+android:gravity="center"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="92dp"
+android:textSize="12dp"
+android:text="周二"
+android:gravity="center"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="92dp"
+android:textSize="12dp"
+android:text="周三"
+android:gravity="center"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="92dp"
+android:textSize="12dp"
+android:text="周四"
+android:gravity="center"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="92dp"
+android:textSize="12dp"
+android:text="周五"
+android:gravity="center"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="92dp"
+android:textSize="12dp"
+android:text="周六"
+android:gravity="center"/>
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="92dp"
+android:textSize="12dp"
+android:text="周日"
+android:gravity="center"/>
+</LinearLayout>
+<View
+android:layout_width="1dp"
+android:layout_height="match_parent"
+android:background="#E5E5E5"/>
+<GridView
+android:id="@+id/courceDetail"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:numColumns="5"
+android:horizontalSpacing="1dp"
+android:verticalSpacing="1dp"
+android:stretchMode="columnWidth"
+android:background="#E5E5E5">
+</GridView>
+</LinearLayout>
+</ScrollView> -->
+
+ 
+</LinearLayout>

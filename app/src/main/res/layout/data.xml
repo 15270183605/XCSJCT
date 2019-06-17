@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="horizontal"
+    >
+    <LinearLayout
+        android:id="@+id/flContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+       android:orientation="vertical"
+        >
+    <LinearLayout
+     android:id="@+id/title1"
+     android:layout_width="fill_parent"
+     android:layout_height="30dp"
+     android:background="#00a8f3"
+     android:gravity="center_vertical"
+     android:orientation="horizontal" >
+   <ImageView 
+         android:id="@+id/downlist"
+         android:layout_width="28dp"
+         android:layout_height="26dp"
+         android:src="@drawable/downlist"
+         android:layout_marginLeft="5dp"
+         ></ImageView>
+         
+     <TextView
+         android:id="@+id/addYear1"
+         android:layout_width="13dp"
+         android:layout_height="28dp"
+         android:layout_marginLeft="7dp"
+         android:text="+"
+         android:textColor="#ff0000"
+         android:textSize="20sp" />
+
+     <TextView
+         android:id="@+id/Year1"
+         android:layout_width="28dp"
+         android:layout_height="13dp"
+         android:layout_marginLeft="7dp"
+         android:text="2018"
+         android:textColor="#ff0000"
+         android:textSize="10sp" />
+
+     <TextView
+         android:layout_width="10dp"
+         android:layout_height="15dp"
+         android:text="年"
+         android:textSize="10sp" />
+     <TextView
+         android:id="@+id/cutYear1"
+         android:layout_width="15dp"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="7dp"
+         android:text="——"
+         android:textColor="#ff0000"
+         android:textSize="25sp" 
+         android:gravity="center"/>
+
+     <View
+         android:layout_width="2dp"
+         android:layout_height="match_parent"
+         android:layout_marginBottom="5dp"
+         android:layout_marginLeft="8dp"
+         android:layout_marginTop="5dp"
+         android:background="#b83dba" />
+
+     <TextView
+         android:id="@+id/addMonth1"
+         android:layout_width="13dp"
+         android:layout_height="28dp"
+         android:layout_marginLeft="7dp"
+         android:text="+"
+         android:textColor="#ff0000"
+         android:textSize="20sp" />
+
+     <TextView
+         android:id="@+id/Month1"
+         android:layout_width="15dp"
+         android:layout_height="15dp"
+         android:layout_marginLeft="7dp"
+         android:text="06"
+         android:textColor="#ff0000"
+         android:textSize="10sp" />
+
+     <TextView
+         android:layout_width="10dp"
+         android:layout_height="15dp"
+         android:text="月"
+         android:textSize="10sp" />
+
+     <TextView
+         android:id="@+id/cutMonth1"
+         android:layout_width="15dp"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="7dp"
+         android:text="——"
+         android:textColor="#ff0000"
+         android:textSize="25sp" 
+        />
+     <EditText 
+         android:id="@+id/seachMessage"
+         android:layout_width="70dp"
+         android:layout_height="20dp"
+         android:background="@drawable/editbackgroundshape"
+         android:layout_marginLeft="26dp"
+         android:textSize="13sp"
+         android:hint="仅填入几号"
+         android:inputType="number"
+         />
+      <ImageView 
+         android:id="@+id/seach"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:src="@drawable/seach1"
+         android:layout_marginLeft="3dp"
+         ></ImageView> 
+      
+ </LinearLayout>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     android:id="@+id/dataLayout"
+      >
+    <LinearLayout 
+       
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:background="#e5e5e5"
+        android:layout_below="@+id/title1"
+       
+        >
+        <RelativeLayout 
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="13dp"
+            >
+       <TextView 
+           android:id="@+id/shouText"
+           android:layout_width="40dp"
+           android:layout_height="16dp"
+           android:text="收入"
+           android:textSize="12sp"
+          
+           android:paddingLeft="8dp"
+          
+          
+           /> 
+              <ImageView 
+    android:id="@+id/image1"
+    android:layout_width="40dp"
+    android:layout_height="3dp"
+    android:scaleType="matrix"
+    android:layout_below="@+id/shouText"
+    android:src="@drawable/image60"
+   
+    
+    />
+           </RelativeLayout>
+           <RelativeLayout
+               android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+           
+                >
+        <TextView 
+             android:id="@+id/zhiText"
+           android:layout_width="40dp"
+           android:layout_height="16dp"
+           android:text="支出"
+           android:textSize="12sp"
+           
+           android:paddingLeft="8dp"
+          ></TextView>
+           <ImageView 
+    android:id="@+id/image2"
+    android:layout_width="40dp"
+    android:layout_height="3dp"
+    android:scaleType="matrix"
+    android:layout_below="@+id/zhiText"
+    android:src="@drawable/image60"
+  android:visibility="gone"
+    
+    />
+        </RelativeLayout>
+        <RelativeLayout 
+             android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            >
+        <TextView 
+             android:id="@+id/yingshouText"
+           android:layout_width="40dp"
+           android:layout_height="16dp"
+           android:text="借款"
+           android:textSize="12sp"
+          android:paddingLeft="8dp"
+           
+           /> 
+           
+         <ImageView 
+    android:id="@+id/image3"
+    android:layout_width="40dp"
+    android:layout_height="3dp"
+    android:scaleType="matrix"
+    android:layout_below="@+id/yingshouText"
+    android:src="@drawable/image60"
+   android:visibility="gone"
+    
+    />
+           </RelativeLayout>
+           <RelativeLayout 
+               android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+               >
+        <TextView 
+             android:id="@+id/yingfuText"
+           android:layout_width="40dp"
+           android:layout_height="16dp"
+           android:text="贷款"
+           android:textSize="12sp"
+            android:paddingLeft="8dp"
+           
+           /> 
+           
+          <ImageView 
+    android:id="@+id/image4"
+    android:layout_width="40dp"
+    android:layout_height="3dp"
+    android:scaleType="matrix"
+    android:layout_below="@+id/yingfuText"
+    android:src="@drawable/image60"
+  android:visibility="gone"
+    
+    />
+           </RelativeLayout>
+           <RelativeLayout 
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            >
+       <TextView 
+           android:id="@+id/shishouText"
+           android:layout_width="40dp"
+           android:layout_height="16dp"
+           android:text="实收"
+           android:textSize="12sp"
+           
+           android:paddingLeft="8dp"
+          
+          
+           /> 
+              <ImageView 
+    android:id="@+id/image5"
+    android:layout_width="40dp"
+    android:layout_height="3dp"
+    android:scaleType="matrix"
+    android:layout_below="@+id/shishouText"
+    android:src="@drawable/image60"
+   android:visibility="gone"
+    
+    />
+           </RelativeLayout>
+           <RelativeLayout 
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+            >
+       <TextView 
+           android:id="@+id/shifuText"
+           android:layout_width="40dp"
+           android:layout_height="16dp"
+           android:text="实付"
+           android:textSize="12sp"
+          
+           android:paddingLeft="8dp"
+          
+          
+           /> 
+              <ImageView 
+    android:id="@+id/image6"
+    android:layout_width="40dp"
+    android:layout_height="3dp"
+    android:scaleType="matrix"
+    android:layout_below="@+id/shifuText"
+    android:src="@drawable/image60"
+   android:visibility="gone"
+    
+    />
+           </RelativeLayout>
+       </LinearLayout>
+       <RelativeLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+           
+           >
+       <ListView 
+           android:layout_below="@+id/title2"
+           android:id="@+id/templateListView"
+           android:layout_width="fill_parent"
+           android:layout_height="match_parent"
+           android:background="#e5e5e5"
+           
+           />
+       <tool.CircleImageView
+     android:layout_width="30dp"
+     android:layout_height="30dp"
+     android:src="@drawable/bottom1"
+     android:id="@+id/returnTop"
+     android:layout_marginLeft="266dp"
+     android:layout_marginTop="360dp"
+      android:visibility="gone"
+     />
+ <tool.CircleImageView
+     android:layout_width="30dp"
+     android:layout_height="30dp"
+     android:src="@drawable/yuyinadd"
+     android:id="@+id/SeachLuYin"
+      android:layout_marginLeft="266dp"
+     android:layout_marginTop="280dp"
+     />  
+     <tool.CircleImageView
+         android:id="@+id/ToBottom"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:src="@drawable/return1" 
+          android:layout_marginLeft="266dp"
+     android:layout_marginTop="320dp"
+    />
+ 
+ </RelativeLayout>
+</LinearLayout>
+ </LinearLayout>
+    
+  
+    
+    
+    
+    </RelativeLayout>

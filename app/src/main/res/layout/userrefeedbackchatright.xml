@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e5e5e5" >
+
+    <TextView
+        android:id="@+id/TimeRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="星期一14:26"
+        android:textColor="#000000"
+        android:textSize="10sp" />
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           android:gravity="center_vertical"
+          
+              >
+           
+            <TextView
+                android:id="@+id/MessageRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chattextshaperight"
+                android:text="管理员管理员管理员管理员管理员管理员"
+                android:maxWidth="200dp"
+                 android:padding="5dp"/>
+                
+      <TextView 
+    android:layout_width="8dp"
+    android:layout_height="18dp"
+    android:background="@drawable/righttriangle"
+    
+    />
+        </LinearLayout>
+        <LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+        <ImageView
+            android:id="@+id/HeadimageRight"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/user" />
+        <TextView 
+            android:id="@+id/NickNameRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="管理员"
+            android:textSize="10sp"
+           
+            />
+       </LinearLayout>
+        
+        
+    </LinearLayout>
+</RelativeLayout>
+</LinearLayout>

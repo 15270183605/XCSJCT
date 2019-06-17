@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       >
+       <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:gravity="center_horizontal"
+           android:layout_marginLeft="10dp"
+           >
+           <TextView 
+               android:id="@+id/ProjectName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="项目名"
+               android:textSize="13sp"
+               />
+            <TextView 
+               android:id="@+id/GuClassName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="项目名"
+               android:textSize="15sp"
+               android:layout_marginTop="5dp"
+               android:textColor="#ff0000"
+               />
+       </LinearLayout>
+       <TextView 
+           android:id="@+id/GuCount"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="1000.0"
+           android:textColor="#ff0000"
+           android:textSize="15sp"
+           android:layout_centerInParent="true"
+           />
+   </RelativeLayout>
+</LinearLayout>

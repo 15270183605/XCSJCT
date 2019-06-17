@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent" 
+   >
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+         android:background="#ffffff"
+        >
+     
+      <LinearLayout 
+          android:id="@+id/XJDetailLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            >
+    <TextView 
+        android:id="@+id/XiJieDetailText"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="详情"
+        android:textColor="#ff0000"
+        android:textSize="15sp"
+         android:gravity="center"
+        
+        />
+<View 
+    android:layout_width="50dp"
+    android:layout_height="0.3dp"
+    android:background="#000000"
+    />
+</LinearLayout>
+
+      <LinearLayout 
+          android:id="@+id/XJMingXiLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+    <TextView 
+        android:id="@+id/MingXiText"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="明细"
+        android:textColor="#ff0000"
+        android:textSize="15sp"
+         android:gravity="center"
+        
+        />
+<View 
+    android:layout_width="50dp"
+    android:layout_height="0.3dp"
+    android:background="#000000"
+    />
+</LinearLayout>
+   <LinearLayout 
+        android:id="@+id/XiJieDelLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+    <TextView 
+        android:id="@+id/DeleteText"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="删除"
+        android:textColor="#ff0000"
+        android:textSize="15sp"
+         android:gravity="center"
+        
+        />
+<View 
+    android:layout_width="50dp"
+    android:layout_height="0.3dp"
+    android:background="#000000"
+    />
+</LinearLayout>
+      
+ <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+<TextView 
+        android:id="@+id/DeleteCancelText"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="取消"
+        android:textColor="#ff0000"
+        android:textSize="15sp"
+         android:gravity="center"
+        
+        />
+</LinearLayout>
+</LinearLayout>
+</LinearLayout>

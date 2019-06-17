@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:background="#585858"
+        android:gravity="center_vertical"
+        >
+        <ImageView 
+            android:id="@+id/ReBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/fesback"
+            android:layout_marginLeft="5dp"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+           
+            android:gravity="center"
+            >
+            <TextView 
+                android:id="@+id/AllPredictDataText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所有预算数据表"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+<ListView 
+    android:id="@+id/AllPredictDataListView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    ></ListView>
+</LinearLayout>

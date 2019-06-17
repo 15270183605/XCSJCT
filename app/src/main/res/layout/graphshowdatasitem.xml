@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+      <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="match_parent"
+          android:background="@drawable/editbackgroundshape"
+          android:orientation="vertical"
+          android:padding="5dp"
+         >
+    <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="355dp"
+         android:orientation="vertical"
+         android:background="@drawable/editbackgroundshape"
+             >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:id="@+id/GraphLayout"
+    android:visibility="gone"
+    >
+   <RadioGroup
+            android:id="@+id/GraphradioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+             android:gravity="center"
+             android:layout_marginLeft="30dp"
+             >
+
+            <RadioButton
+                android:id="@+id/TotalradioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="整体"
+                android:textSize="12sp"/>
+           
+            <RadioButton
+                android:id="@+id/SingleradioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:text="个体"
+                 android:textSize="12sp"
+               />
+            
+        </RadioGroup>
+        <Spinner 
+            android:id="@+id/SelectSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"
+            />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/Graphcontainer"
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+       android:background="@drawable/editbackgroundshape"
+        android:orientation="horizontal" 
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp">
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+      
+        >
+        <RadioGroup
+            android:id="@+id/GraphradioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal"
+             android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/zhuzhuangradioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"/>
+            <ImageView 
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/zhuzhuang"
+                android:layout_marginTop="2dp"
+                 android:layout_marginLeft="3dp"
+                />
+
+            <RadioButton
+                android:id="@+id/zhexianradioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:layout_marginLeft="20dp"
+               />
+             <ImageView 
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/zhexian1"
+                 android:layout_marginTop="3dp"
+                 android:layout_marginLeft="3dp"
+                />
+           <RadioButton
+                android:id="@+id/shanxingradioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                />
+             <ImageView 
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/shanxing1"
+                android:layout_marginTop="3dp"
+                 android:layout_marginLeft="3dp"
+                />
+            
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+       android:orientation="horizontal"
+       android:layout_marginTop="3dp"
+       android:gravity="center"
+       android:padding="3dp"
+       android:background="@drawable/backgroundshape"
+        >
+        <tool.HorizontalListView 
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:id="@+id/horizontalListView"
+            ></tool.HorizontalListView>
+    </LinearLayout>
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="15dp"
+    >
+    <TextView 
+        android:id="@+id/bottomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="2019-08"
+        />
+</LinearLayout>
+  </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

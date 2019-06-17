@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <ImageView 
+            android:id="@+id/ChongZhiJiLuImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/chonghuafei"
+            android:layout_marginLeft="5dp"
+            />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            >
+        <tool.RollTextView 
+            android:id="@+id/ChongZhiText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="手机充值 15270183605"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:ellipsize="marquee" 
+            />
+        <TextView
+                android:id="@+id/ChongZhiWayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中国人民银行"
+                android:textColor="#ff0000"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            >
+            <TextView
+                android:id="@+id/ChongZhiNumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥500"
+                android:textColor="#ff0000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/ChongZhiTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-06-01 9:00"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+               
+                />
+     </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

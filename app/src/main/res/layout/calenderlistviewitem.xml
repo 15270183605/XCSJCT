@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <LinearLayout 
+       android:layout_width="51dp"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:background="@android:color/transparent"
+       >
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/WeekDay"
+           android:text="周日"
+           android:textSize="12sp"
+           android:textColor="#000000"
+           />
+       <tool.RollTextView 
+           android:layout_width="35dp"
+           android:layout_height="wrap_content"
+           android:id="@+id/DayOfMonth"
+           android:text="2019-02-19"
+           android:textSize="12sp"
+           android:singleLine="true"
+           android:layout_marginTop="3dp"
+             android:textColor="#000000"
+             android:marqueeRepeatLimit="marquee_forever"
+             android:ellipsize="marquee"
+             android:gravity="center"
+           />
+       <View 
+           android:layout_width="35dp"
+           android:layout_height="2dp"
+           android:id="@+id/UnderLine"
+           android:background="#ffffff"
+           android:layout_marginTop="2dp"
+           android:visibility="gone"
+           />
+   </LinearLayout> 
+
+</LinearLayout>

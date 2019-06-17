@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/MakeTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:text="2018-03-04"
+            android:textColor="@android:color/holo_green_light"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/MenuStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/MakeTime"
+            android:layout_below="@+id/MakeTime"
+            android:layout_marginRight="27dp"
+            android:text="初始化"
+            android:textColor="#ff0000"
+            android:textSize="13sp"
+            android:layout_marginTop="3dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/SourceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="薪资"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/MoneyCounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="(1000)"
+                android:textColor="#ff0000"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/MakePerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MakeTime"
+            android:text="张三"
+            android:textSize="13sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="5dp" 
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+        <tool.CircleImageView
+            android:id="@+id/lockImage"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+           
+           android:layout_centerInParent="true"
+         
+            android:src="@drawable/lock2" />
+
+        <TextView
+            android:id="@+id/ClassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支出单"
+            android:textColor="#ff0000"
+            android:textSize="13sp"
+           android:layout_marginTop="3dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@+id/linearLayout1"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

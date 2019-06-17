@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    >
+<LinearLayout 
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/jiazaibackgroundshape"
+    >
+    <ImageView 
+        android:id="@+id/PayLeiXing"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/zhifubaopay"
+        />
+    <TextView 
+        android:id="@+id/PayProgressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付中...."
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:layout_marginTop="5dp"
+        />
+   
+    <life.lifemoney.CustomStatusView
+        android:id="@+id/PayProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center"
+       android:layout_marginTop="10dp"
+         android:padding="3dp"
+        app:load_failure_color="#ff0000"
+        app:load_success_color="#00a8f3"
+        app:progress_color="#e5e5e5"
+        app:progress_radius="20dp"
+        app:progress_width="3dp" />
+</LinearLayout>
+</LinearLayout>

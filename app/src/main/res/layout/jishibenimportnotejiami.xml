@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="30dp"
+       android:orientation="horizontal"
+       android:gravity="center"
+       >
+       <RadioGroup 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:orientation="horizontal"
+           >
+           <RadioButton 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/Addkey"
+               android:text="加密"
+               android:textSize="13sp"
+               android:checked="true"
+               />
+          
+            <RadioButton 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/NoAddkey"
+               android:text="不加密"
+               android:textSize="13sp"
+               android:layout_marginLeft="20dp"
+               />
+       </RadioGroup>
+   </LinearLayout> 
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/AddKeyLayout"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+   <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:layout_marginTop="10dp"
+       >
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="加密方式:"
+           android:textSize="13sp"
+           />
+         <RelativeLayout
+            android:id="@+id/JiaMiLayout"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/edittextbackground"
+            android:gravity="center_vertical"
+            android:paddingLeft="14dp"
+            android:paddingRight="10dp" 
+             android:layout_marginLeft="3dp">
+
+            <TextView
+                android:id="@+id/JiaMiMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="自定义"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/ExpandDown"
+                android:layout_width="12dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/expanddown" />
+        </RelativeLayout>
+   </LinearLayout>
+   <LinearLayout 
+       android:id="@+id/PassWordLayout"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical"
+       android:layout_marginTop="10dp"
+       >
+       <TextView 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="输入密钥:"
+           android:textSize="13sp"
+           />
+   <EditText 
+      android:id="@+id/PasswordEdit"
+       android:layout_width="150dp"
+       android:layout_height="30dp"
+       android:hint="加密密钥"
+       android:textColor="#ff0000"
+       android:textSize="13sp"
+       android:background="@drawable/edittextbackground"
+       android:layout_marginLeft="3dp"
+       android:inputType="numberPassword"
+       />
+   
+   </LinearLayout>
+</LinearLayout>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    >
+    <TextView 
+        android:id="@+id/SavePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加密"
+        android:textColor="#ff0000"
+        android:textSize="15sp"
+       android:layout_toLeftOf="@+id/CancelPassword"
+       android:layout_marginRight="25dp"
+        />
+    <TextView 
+        android:id="@+id/CancelPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        
+        android:textSize="15sp"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="60dp"
+        />
+</RelativeLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    ></LinearLayout>
+</LinearLayout>

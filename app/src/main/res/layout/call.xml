@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/CallLayout"
+    android:background="@drawable/contactbackground">
+  <ImageView 
+      android:id="@+id/CallReback"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:src="@drawable/fesback"
+    android:layout_marginTop="15dp"
+      /> 
+<LinearLayout 
+    android:id="@+id/TopLayout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+       
+        
+      <DigitalClock
+          android:id="@+id/digitalClock1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="DigitalClock"
+          android:textSize="20sp" 
+          android:textColor="@android:color/white"/>
+      <TextView 
+          android:id="@+id/TimeCall"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="2019-03-04"
+          android:textSize="15sp"
+          android:layout_marginTop="2dp"
+           android:textColor="@android:color/white"
+          />
+        
+    </LinearLayout>
+    
+</LinearLayout>
+ <ImageView 
+     android:id="@+id/Robat"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:src="@drawable/tongxin"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="15dp"
+      android:layout_marginTop="10dp"
+      /> 
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/TopLayout"
+    >
+    <LinearLayout 
+        android:id="@+id/Layout1"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       
+        >
+        <ImageView 
+            android:id="@+id/ContactImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/kid"
+            android:layout_gravity="center"
+            />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           
+            >
+         
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/white" 
+            />
+       
+           <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                
+                >
+                <android.support.v4.view.ViewPager
+            android:id="@+id/CallViewPage"
+            android:layout_width="146dp"
+            android:layout_height="match_parent" />
+        <!-- <ListView 
+            android:id="@+id/ContactListView"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            ></ListView> -->
+           
+           <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" 
+            />
+
+        </LinearLayout>
+        </LinearLayout>
+      
+    </LinearLayout>
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:layout_toRightOf="@+id/Layout1"
+       android:gravity="center_horizontal"
+       >
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:paddingRight="10dp"
+          android:layout_marginTop="30dp"
+           >
+           <RelativeLayout 
+               android:layout_width="match_parent"
+               android:layout_height="20dp"
+               android:orientation="horizontal"
+               android:gravity="center_vertical"
+               >
+               <EditText 
+                     android:id="@+id/PhoneEdit"
+                       android:background="@null"
+                       android:layout_width="match_parent"
+                       android:layout_height="20dp"
+                       android:textColor="@android:color/white"
+                      android:layout_toRightOf="@+id/YuYinInput"
+                      android:layout_toLeftOf="@+id/Clear"
+                      android:inputType="phone"
+                   />
+               <ImageView 
+                   android:id="@+id/YuYinInput"
+                   android:layout_width="26dp"
+                   android:layout_height="26dp"
+                   android:src="@drawable/callluyin"
+                   android:layout_alignParentLeft="true"                  
+                   />
+                <ImageView 
+                   android:id="@+id/Clear"
+                   android:layout_width="17dp"
+                   android:layout_height="17dp"
+                   android:src="@drawable/dacha"
+                   android:layout_alignParentRight="true"                  
+                   />
+           </RelativeLayout>
+           <View 
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+               android:background="#ffffff"
+               />
+       </LinearLayout>
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center"
+           android:layout_marginTop="6dp"
+           >
+           <GridView 
+               android:id="@+id/CallGridView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:numColumns="3"
+               ></GridView>
+       </LinearLayout>
+       <LinearLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:gravity="center"
+           >
+         <ImageView 
+             android:id="@+id/CallPhone"
+             android:layout_width="70dp"
+             android:layout_height="70dp"
+             android:src="@drawable/call"
+            
+             />
+       </LinearLayout>
+    <LinearLayout 
+        android:id="@+id/RobatLayout"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:orientation="horizontal"
+       android:background="@drawable/circlebackground"
+        android:layout_marginTop="20dp"
+       android:gravity="center"
+        >
+    <WebView 
+        android:id="@+id/RobatWeb"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@android:color/transparent"
+          
+        />
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center" 
+       
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="智能通话"
+            android:textSize="15sp"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+   </LinearLayout>
+  
+</RelativeLayout>
+</RelativeLayout>
